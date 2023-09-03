@@ -25,8 +25,8 @@ cloudinary.config({
 });
 
 // mongodb
-//mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect(process.env.MONGODB_URI_LOCAL);
+mongoose.connect(process.env.MONGODB_URI);
+// mongoose.connect(process.env.MONGODB_URI_LOCAL);
 
 app.get("/", (req, res) => {
   res.status(200).json("Welcome to Marvel app api !");
